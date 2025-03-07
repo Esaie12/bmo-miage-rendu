@@ -30,5 +30,5 @@ Afin d'accéder à ce projet, assurez-vous d'avoir installé :
 
 ### 2️⃣ Cloner le projet
 
-git clone https://github.com/nom-utilisateur/nom-du-repo.git
-cd nom-du-repo
+git clone https://github.com/Esaie12/bmo-miage-rendu
+cd bmo-miage-rendu
