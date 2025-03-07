@@ -1,0 +1,26 @@
+## 🎨 Diagramme de Cas d'Utilisation
+
+Le diagramme de cas d'utilisation ci-dessous représente les interactions des utilisateurs avec le système.
+
+Acteurs : Utilisateur et Le gestionnaire
+
+#📌 Explication du diagramme :
+ 
+1. Utilisateur peut :
+   - Voir la disponibilités des résidences.
+   - Réserver une ou des chambres
+   - Réserver du matériels
+   -Ajouter des services supplémentaire à sa réservation
+   -Laisser un avis
+
+
+2. Gestionnaire peut :
+   - Gérer ses résidences
+- Gérer les réservations
+- Gérer les disponibilités
+- Gérer les avis
+- Etablir des contraintes
+- Gérer les avis
+
+💡 # Le fichier image `use-case-diagram.png` doit être placé dans le dossier `docs/` de votre projet.
+

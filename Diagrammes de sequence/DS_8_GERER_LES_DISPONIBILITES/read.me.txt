@@ -1,0 +1,46 @@
+# 📌 Diagramme de Séquence - Gestion des Disponibilités
+
+## 📖 Description
+Ce diagramme de séquence illustre le processus par lequel un **Gestionnaire** peut consulter et modifier les disponibilités via le **Système**. Il prend en compte :
+1. **La consultation des disponibilités existantes**.
+2. **La modification d'une disponibilité avec confirmation de mise à jour**.
+
+## 🖼️ Diagramme de Séquence
+![Diagramme de séquence](./docs/diagramme_gestion_disponibilites.png)
+
+📌 **Remarque** : Le fichier image `diagramme_gestion_disponibilites.png` doit être placé dans le dossier `docs/` du projet.
+
+---
+
+## 🏗️ Explication des Étapes
+
+### 🔍 **Consultation des Disponibilités**
+1️⃣ **Le Gestionnaire demande l’état des disponibilités**  
+   - Il envoie une requête au **Système** pour consulter l’état actuel des disponibilités.  
+
+2️⃣ **Le Système retourne la liste des disponibilités**  
+   - Le **Système** affiche les disponibilités enregistrées.  
+
+---
+
+### ✏️ **Modification d'une Disponibilité (Optionnelle)**
+3️⃣ **Le Gestionnaire choisit de modifier une disponibilité** *(bloc optionnel `opt`)*  
+   - Si une modification est nécessaire, il envoie une requête de mise à jour.  
+
+4️⃣ **Le Système effectue la mise à jour**  
+   - La disponibilité est modifiée dans la base de données.  
+
+5️⃣ **Le Système envoie un message de confirmation**  
+   - Un message de succès est retourné au **Gestionnaire** pour confirmer la mise à jour.  
+
+---
+
+## 📊 Acteurs du Diagramme
+- **Gestionnaire** : Consulte et met à jour les disponibilités.  
+- **Système** : Gère les demandes de consultation et de modification des disponibilités.  
+
+---
+
+## 🤝 Contributeurs
+- **[Nom 1]** - Développement Backend  
+- **[

@@ -1,0 +1,52 @@
+# 📌 Diagramme de Séquence - Gestion des Avis
+
+## 📖 Description
+Ce diagramme de séquence illustre le processus par lequel un **Gestionnaire** peut gérer les avis des utilisateurs via le **Système**. Il détaille la récupération des avis et les actions possibles (rendre un avis visible ou invisible).
+
+## 🖼️ Diagramme de Séquence
+![Diagramme de séquence](./docs/diagramme_gestion_avis.png)
+
+📌 **Remarque** : Le fichier image `diagramme_gestion_avis.png` doit être placé dans le dossier `docs/` du projet.
+
+---
+
+## 🏗️ Explication des Étapes
+
+1️⃣ **Le Gestionnaire demande la liste des avis**  
+   - Le **Gestionnaire** envoie une requête au **Système** pour récupérer la liste des avis disponibles.
+
+2️⃣ **Le Système renvoie la liste des avis**  
+   - Le **Système** retourne tous les avis présents sur la plateforme.
+
+3️⃣ **(Optionnel) Le Gestionnaire sélectionne un avis**  
+   - Si une action doit être effectuée sur un avis, le **Gestionnaire** en sélectionne un.
+
+4️⃣ **Le Système renvoie les informations sur l’avis sélectionné**  
+   - Une fois l’avis choisi, le **Système** affiche ses détails.
+
+5️⃣ **(Alternative `alt`) Gestion de la visibilité de l’avis**  
+   - 🟢 **Si l’avis est invisible** :
+     - Le **Système** le rend **visible** sur la plateforme.
+   - 🔴 **Si l’avis est visible** :
+     - Le **Système** le rend **invisible**.
+
+---
+
+## 📊 Acteurs du Diagramme
+- **Gestionnaire** : Peut consulter et modifier l’état de visibilité des avis.
+- **Système** : Fournit la liste des avis et gère leur affichage.
+
+---
+
+## 🤝 Contributeurs
+- **[Nom 1]** - Développement Backend
+- **[Nom 2]** - Développement Frontend
+- **[Nom 3]** - Conception des diagrammes UML
+- **[Nom 4]** - Documentation et gestion du projet
+
+📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.
+
+---
+
+## 📜 Licence
+Ce projet est sous licence **MIT**, ce qui signifie

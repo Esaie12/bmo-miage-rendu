@@ -1,0 +1,73 @@
+# 📌 Diagramme de Séquence - Gestion des Résidences
+
+## 📖 Description
+Ce diagramme de séquence illustre le processus par lequel un **Gestionnaire** peut **gérer ses résidences** via le **Système**. Il prend en compte :
+1. **La consultation de la liste des résidences.**
+2. **L'ajout d'une nouvelle résidence avec validation des données.**
+3. **L'affichage des informations détaillées d'une résidence existante.**
+
+## 🖼️ Diagramme de Séquence
+![Diagramme de séquence](./docs/diagramme_gestion_residences.png)
+
+📌 **Remarque** : Le fichier image `diagramme_gestion_residences.png` doit être placé dans le dossier `docs/` du projet.
+
+---
+
+## 🏗️ Explication des Étapes
+
+### 🔍 **Consultation des Résidences**
+1️⃣ **Le Gestionnaire clique sur le menu "Gérer mes résidences"**  
+   - Il envoie une requête au **Système** pour afficher la liste des résidences existantes.
+
+2️⃣ **Le Système renvoie la liste des résidences**  
+   - L’ensemble des résidences du gestionnaire est affiché.
+
+---
+
+### ➕ **Ajout d'une Résidence (Bloc Alternatif `alt`)**
+3️⃣ **Le Gestionnaire clique sur "Ajouter une résidence"**  
+   - Il demande l’affichage du formulaire de création d’une résidence.
+
+4️⃣ **Le Système renvoie le formulaire d’ajout**  
+   - L’interface affiche un formulaire permettant de renseigner les informations de la résidence.
+
+5️⃣ **Le Gestionnaire remplit et soumet le formulaire**  
+   - Une requête est envoyée au **Système** pour enregistrer les données saisies.
+
+#### 🔁 **Vérification des Champs (Bloc `loop`)**
+6️⃣ **Si certaines informations sont manquantes**  
+   - Le **Système** renvoie un message d’erreur demandant de compléter le formulaire.
+
+7️⃣ **Si toutes les informations sont complètes**  
+   - Le **Système** valide la création et renvoie un message de succès.
+
+---
+
+### 📄 **Affichage des Détails d'une Résidence (Bloc Alternatif `alt`)**
+8️⃣ **Le Gestionnaire clique sur une résidence existante**  
+   - Il demande à afficher les informations détaillées d’une résidence.
+
+9️⃣ **Le Système renvoie les informations de la résidence**  
+   - Les détails de la résidence sélectionnée sont affichés.
+
+---
+
+## 📊 Acteurs du Diagramme
+- **Gestionnaire** : Consulte, ajoute et affiche les détails des résidences.  
+- **Système** : Fournit la liste des résidences, traite les ajouts et affiche les détails d’une résidence.  
+
+---
+
+## 🤝 Contributeurs
+- **[Nom 1]** - Développement Backend  
+- **[Nom 2]** - Développement Frontend  
+- **[Nom 3]** - Conception des diagrammes UML  
+- **[Nom 4]** - Documentation et gestion du projet  
+
+📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.  
+
+---
+
+## 📜 Licence
+Ce projet est sous licence **MIT**, ce qui signifie que vous êtes libre de l'utiliser, de le modifier et de le redistribuer sous certaines conditions :
+

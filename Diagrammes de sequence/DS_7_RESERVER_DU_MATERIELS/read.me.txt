@@ -1,0 +1,67 @@
+# 📌 Diagramme de Séquence - Réservation de Matériels
+
+## 📖 Description
+Ce diagramme de séquence illustre le processus par lequel un **Utilisateur** peut réserver du matériel via le **Système**. Il prend en compte deux scénarios :
+1. **Si le paiement est valide** : La réservation est confirmée.
+2. **Si le paiement échoue** : Un message d’erreur est retourné.
+
+## 🖼️ Diagramme de Séquence
+![Diagramme de séquence](./docs/diagramme_reservation_materiels.png)
+
+📌 **Remarque** : Le fichier image `diagramme_reservation_materiels.png` doit être placé dans le dossier `docs/` du projet.
+
+---
+
+## 🏗️ Explication des Étapes
+
+### 📌 **Étapes principales**
+1️⃣ **L'Utilisateur demande la page des matériels**  
+   - Il envoie une requête au **Système** pour afficher la liste des matériels disponibles.
+
+2️⃣ **Le Système renvoie la liste des matériels disponibles**  
+   - Tous les matériels disponibles sont affichés à l’utilisateur.
+
+3️⃣ **L'Utilisateur choisit un ou plusieurs matériels**  
+   - Il sélectionne les matériels qu’il souhaite réserver.
+
+4️⃣ **Le Système renvoie la page de paiement**  
+   - L’utilisateur est dirigé vers une page pour effectuer son paiement.
+
+5️⃣ **L'Utilisateur effectue le paiement**  
+   - Il procède au règlement de sa réservation.
+
+---
+
+### 🏷️ **Alternative : Gestion du Paiement**
+#### ✅ **Si le paiement est valide**  
+6️⃣ **Le Système enregistre la réservation des matériels**  
+   - Le matériel est réservé pour l’utilisateur.
+
+7️⃣ **Le Système renvoie un message de succès**  
+   - L’utilisateur est informé que la réservation a bien été enregistrée.
+
+#### ❌ **Si le paiement échoue**  
+6️⃣ **Le Système renvoie un message d’erreur**  
+   - L’utilisateur est informé que le paiement a échoué.
+
+---
+
+## 📊 Acteurs du Diagramme
+- **Utilisateur** : Consulte les matériels disponibles, effectue une réservation et réalise le paiement.  
+- **Système** : Fournit la liste des matériels, gère le processus de réservation et le paiement.  
+
+---
+
+## 🤝 Contributeurs
+- **[Nom 1]** - Développement Backend  
+- **[Nom 2]** - Développement Frontend  
+- **[Nom 3]** - Conception des diagrammes UML  
+- **[Nom 4]** - Documentation et gestion du projet  
+
+📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.  
+
+---
+
+## 📜 Licence
+Ce projet est sous licence **MIT**, ce qui signifie que vous êtes libre de l'utiliser, de le modifier et de le redistribuer sous certaines conditions :
+

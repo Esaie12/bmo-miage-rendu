@@ -1,0 +1,35 @@
+# 📌 Diagramme de Séquence - Établissement d’une Contrainte
+
+## 📖 Description
+Ce diagramme de séquence illustre le processus d'établissement d’une contrainte par un gestionnaire via le système. Il détaille les interactions entre ces deux acteurs.
+
+## 🖼️ Diagramme de Séquence
+![Diagramme de séquence](./docs/diagramme_de_sequence.png)
+
+📌 **Remarque** : Le fichier image `diagramme_de_sequence.png` doit être placé dans le dossier `docs/` du projet.
+
+---
+
+## 🏗️ Explication des Étapes
+
+1️⃣ **Demande d’établissement d’une contrainte**  
+   - Le **Gestionnaire** envoie une requête au **Système** pour définir une contrainte.
+
+2️⃣ **Le système envoie un champ de saisie**  
+   - Le **Système** répond en affichant un champ permettant au gestionnaire de saisir les paramètres de la contrainte.
+
+3️⃣ **Le gestionnaire remplit le champ et l’envoie au système**  
+   - Après avoir saisi les informations nécessaires, le **Gestionnaire** envoie les données au **Système**.
+
+4️⃣ **Le système établit la contrainte**  
+   - Le **Système** traite les informations reçues et applique la contrainte définie.
+
+5️⃣ **Résultat de la contrainte**  
+   - Le **Système** retourne une confirmation ou un message d’erreur au **Gestionnaire**, indiquant si la contrainte a bien été établie.
+
+---
+
+## 📊 Acteurs du Diagramme
+- **Gestionnaire** : Utilisateur qui configure les contraintes dans le système.
+- **Système** : Interface logicielle qui traite les requêtes et applique les contraintes.
+

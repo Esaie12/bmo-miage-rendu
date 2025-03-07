@@ -1,0 +1,28 @@
+# 📌 Diagramme de Séquence - Soumission d'un Avis
+
+## 📖 Description
+Ce diagramme de séquence illustre le processus par lequel un **Utilisateur** peut soumettre un avis sur la plateforme. Le **Système** traite la demande et envoie une notification au **Gestionnaire**.
+
+## 🖼️ Diagramme de Séquence
+![Diagramme de séquence](./docs/diagramme_soumission_avis.png)
+
+📌 **Remarque** : Le fichier image `diagramme_soumission_avis.png` doit être placé dans le dossier `docs/` du projet.
+
+---
+
+## 🏗️ Explication des Étapes
+
+1️⃣ **L'Utilisateur demande à laisser un avis**  
+   - L'**Utilisateur** envoie une requête au **Système** pour soumettre un avis.
+
+2️⃣ **Le Système renvoie un formulaire**  
+   - En réponse, le **Système** affiche un formulaire que l'utilisateur doit remplir.
+
+3️⃣ **L'Utilisateur remplit et soumet le formulaire**  
+   - Une fois le formulaire rempli, il est soumis au **Système**.
+
+4️⃣ **Le Système envoie une notification au Gestionnaire**  
+   - Le **Système** informe le **Gestionnaire** qu'un nouvel avis a été soumis.
+
+5️⃣ **Le Système renvoie un message de succès à l’Utilisateur**  
+   - Un message de confirmation est envoyé à l'**Utilisateur**, indiquant que l'avis a été bien

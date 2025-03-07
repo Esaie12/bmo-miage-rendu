@@ -1,0 +1,34 @@
+# 🚀 Nom du Projet
+
+TP BMO - L3 MIAGE (2024 -2025)
+
+# 🚀 Etudiants
+
+- DIALLO Mariama
+- OMIYALE Esaïe
+
+## 📖 Description
+
+Ce projet est une modélisation d'un système d gestion de location de résidence à courte durée. Il comprend quatre menus principaux : 
+- Diagramme de cas d'utilisation
+- Diagramme de classe
+- Diagrammes d'objet
+- Diagrammes d'état
+- Diagrammes des séquences  
+
+Il s'agit des diagrammes faites avec un outils de modélisation
+
+## 🛠️ Installation
+
+ - Import le projet en ouvrant le fichier XMI ci joint à ce dossier
+
+### 1️⃣ Prérequis
+
+Afin d'accéder à ce projet, assurez-vous d'avoir installé :
+- Modélio 
+- Ajouter le package JAVA à Modélio
+
+### 2️⃣ Cloner le projet
+
+git clone https://github.com/nom-utilisateur/nom-du-repo.git
+cd nom-du-repo
