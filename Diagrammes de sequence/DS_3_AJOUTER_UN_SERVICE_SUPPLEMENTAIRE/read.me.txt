@@ -1,57 +1,29 @@
 # 📌 Diagramme de Séquence - Ajout de Services et Paiement
 
-## 📖 Description
-Ce diagramme de séquence illustre le processus d'ajout de services par un **Utilisateur** et son paiement via le **Système**. Il inclut la gestion des cas de succès et d'erreur lors du paiement.
-
-## 🖼️ Diagramme de Séquence
-![Diagramme de séquence](./docs/diagramme_ajout_services_paiement.png)
-
-📌 **Remarque** : Le fichier image `diagramme_ajout_services_paiement.png` doit être placé dans le dossier `docs/` du projet.
-
----
+## 📊 Acteurs du Diagramme
+- Utilisateur : Demande la liste des services, ajoute des services et effectue le paiement.
+- Système : Fournit les services disponibles, traite la demande et gère le paiement.
 
 ## 🏗️ Explication des Étapes
 
-1️⃣ **L’Utilisateur demande la page des services**  
-   - L’**Utilisateur** envoie une requête au **Système** pour afficher les services disponibles.
+1️⃣ L’Utilisateur demande la page des services  
+   - L’Utilisateur envoie une requête au Système pour afficher les services disponibles.
 
-2️⃣ **Le Système renvoie la liste des services disponibles**  
-   - Le **Système** affiche les services que l’utilisateur peut ajouter.
+2️⃣ Le Système renvoie la liste des services disponibles  
+   - Le Système affiche les services que l’utilisateur peut ajouter.
 
-3️⃣ **L’Utilisateur ajoute des services à sa réservation**  
-   - L’**Utilisateur** sélectionne un ou plusieurs services à ajouter.
+3️⃣ L’Utilisateur ajoute des services à sa réservation  
+   - L’Utilisateur sélectionne un ou plusieurs services à ajouter.
 
-4️⃣ **Le Système renvoie la page de paiement**  
-   - Une fois les services sélectionnés, le **Système** génère une page de paiement.
+4️⃣ Le Système renvoie la page de paiement  
+   - Une fois les services sélectionnés, le Système génère une page de paiement.
 
-5️⃣ **L’Utilisateur effectue le paiement**  
-   - L’**Utilisateur** procède au paiement des services ajoutés.
+5️⃣ L’Utilisateur effectue le paiement  
+   - L’Utilisateur procède au paiement des services ajoutés.
 
-6️⃣ **Gestion du paiement (Bloc alternatif `alt`)**  
-   - 🟢 **Si le paiement est valide** :
-     - Le **Système** renvoie un message de succès.
-     - Le **Système** ajoute le service à la réservation.
-   - 🔴 **Si le paiement est erroné** :
-     - Le **Système** renvoie un message d’erreur informant l’utilisateur que le paiement a échoué.
-
----
-
-## 📊 Acteurs du Diagramme
-- **Utilisateur** : Demande la liste des services, ajoute des services et effectue le paiement.
-- **Système** : Fournit les services disponibles, traite la demande et gère le paiement.
-
----
-
-## 🤝 Contributeurs
-- **[Nom 1]** - Développement Backend
-- **[Nom 2]** - Développement Frontend
-- **[Nom 3]** - Conception des diagrammes UML
-- **[Nom 4]** - Documentation et gestion du projet
-
-📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.
-
----
-
-## 📜 Licence
-Ce projet est sous licence **MIT**, ce qui signifie que vous êtes libre de l'utiliser, de le modifier et de le redistribuer sous certaines conditions :
-
+6️⃣ Gestion du paiement (Bloc alternatif `alt`)  
+   - 🟢 Si le paiement est valide :
+     - Le Système renvoie un message de succès.
+     - Le Système ajoute le service à la réservation.
+   - 🔴 Si le paiement est erroné :
+     - Le Système renvoie un message d’erreur informant l’utilisateur que le paiement a échoué.

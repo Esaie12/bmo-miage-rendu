@@ -1,51 +1,27 @@
 # 📌 Diagramme de Séquence - Gestion des Réservations
 
-## 📖 Description
-Ce diagramme de séquence illustre le processus de gestion des réservations par un **Gestionnaire**, avec l’interaction du **Service** et de l’**Utilisateur**.
+## 📊 Acteurs du Diagramme
 
-## 🖼️ Diagramme de Séquence
-![Diagramme de séquence](./docs/diagramme_gestion_reservations.png)
+- Gestionnaire : Demande la liste des réservations et effectue des actions sur celles-ci.
+- Service : Traite les requêtes du gestionnaire et interagit avec l'utilisateur.
+- Utilisateur : Reçoit une notification lorsqu'une action est effectuée sur sa réservation.
 
-📌 **Remarque** : Le fichier image `diagramme_gestion_reservations.png` doit être placé dans le dossier `docs/` du projet.
-
----
 
 ## 🏗️ Explication des Étapes
 
-1️⃣ **Le Gestionnaire demande la liste des réservations**  
-   - Le **Gestionnaire** envoie une requête au **Service** pour récupérer la liste des réservations.
+1️⃣ Le Gestionnaire demande la liste des réservations
+   - Le Gestionnaire envoie une requête au Service pour récupérer la liste des réservations.
 
-2️⃣ **Le Service renvoie la liste des réservations**  
-   - Le **Service** traite la requête et retourne la liste des réservations existantes.
+2️⃣ Le Service renvoie la liste des réservations  
+   - Le Service traite la requête et retourne la liste des réservations existantes.
 
-3️⃣ **Le Gestionnaire effectue une action sur une réservation**  
-   - Il peut **confirmer**, **modifier** ou **annuler** une réservation via le **Service**.
+3️⃣ Le Gestionnaire effectue une action sur une réservation  
+   - Il peut confirmer, modifier ou annuler une réservation via le Service.
 
-4️⃣ **Le Service envoie un mail de notification à l’Utilisateur**  
-   - Lorsque l’action est effectuée, une notification est envoyée à l’**Utilisateur** pour l’informer du changement.
+4️⃣ Le Service envoie un mail de notification à l’Utilisateur  
+   - Lorsque l’action est effectuée, une notification est envoyée à l’Utilisateur pour l’informer du changement.
 
-5️⃣ **Le Service renvoie un message de succès au Gestionnaire**  
+5️⃣ Le Service renvoie un message de succès au Gestionnaire  
    - Une confirmation est renvoyée pour indiquer que l’action a été prise en compte avec succès.
 
----
-
-## 📊 Acteurs du Diagramme
-- **Gestionnaire** : Demande la liste des réservations et effectue des actions sur celles-ci.
-- **Service** : Traite les requêtes du gestionnaire et interagit avec l'utilisateur.
-- **Utilisateur** : Reçoit une notification lorsqu'une action est effectuée sur sa réservation.
-
----
-
-## 🤝 Contributeurs
-- **[Nom 1]** - Développement Backend
-- **[Nom 2]** - Développement Frontend
-- **[Nom 3]** - Conception des diagrammes UML
-- **[Nom 4]** - Documentation et gestion du projet
-
-📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.
-
----
-
-## 📜 Licence
-Ce projet est sous licence **MIT**, ce qui signifie que vous êtes libre de l'utiliser, de le modifier et de le redistribuer sous certaines conditions :
 
