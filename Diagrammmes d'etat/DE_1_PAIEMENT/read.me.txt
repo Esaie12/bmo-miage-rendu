@@ -1,59 +1,35 @@
 # 📌 Diagramme d'État - Processus de Paiement
 
-## 📖 Description
-Ce diagramme d'état illustre le cycle de vie du **paiement** dans le système. Il représente les transitions entre les différents états du paiement, en fonction des actions et des validations effectuées.
+Ce diagramme d'état illustre le cycle de vie du paiement dans le système. Il représente les transitions entre les différents états du paiement, en fonction des actions et des validations effectuées.
 
-## 🖼️ Diagramme d'État
-![Diagramme d'état](./docs/diagramme_etat_paiement.png)
-
-📌 **Remarque** : Le fichier image `diagramme_etat_paiement.png` doit être placé dans le dossier `docs/` du projet.
-
----
+## 📊 Acteurs du Diagramme
+- Utilisateur : Saisit les informations de paiement et valide la transaction.  
+- Système : Vérifie les informations de la carte, enregistre la transaction et détermine l'issue du paiement.  
 
 ## 🏗️ Explication des États et Transitions
 
-### 🔹 **Début**
+ 🔹 Début
 - L'utilisateur initie le processus de paiement.
 
-### 🔹 **Saisie des informations de la carte**
+🔹 Saisie des informations de la carte
 - L'utilisateur entre les informations de sa carte bancaire (numéro, date d'expiration, CVV).
 
-### 🔹 **Carte valide**
+🔹 Carte valide
 - Si les informations sont correctes, le processus continue vers l'étape suivante.
-- 🔄 **Si le code est invalide**, l'utilisateur doit réessayer ou annuler l'opération.
+- 🔄 Si le code est invalide, l'utilisateur doit réessayer ou annuler l'opération.
 
-### 🔹 **Transaction**
-- Une fois les informations validées, le **Système** enregistre les détails de la transaction.
+🔹 Transaction
+- Une fois les informations validées, le Système enregistre les détails de la transaction.
 
-### 🔹 **Validation du paiement**
+🔹 Validation du paiement
 - Deux issues possibles :
-  - ✅ **Paiement accepté** : La transaction est validée et le montant est enregistré pour la réservation.
-  - ❌ **Paiement refusé** : Le paiement échoue, nécessitant une nouvelle tentative ou l'annulation.
+  - ✅ Paiement accepté : La transaction est validée et le montant est enregistré pour la réservation.
+  - ❌ Paiement refusé : Le paiement échoue, nécessitant une nouvelle tentative ou l'annulation.
 
-### 🔹 **Annulation du paiement**
+ 🔹 Annulation du paiement
 - En cas d'échec ou d'abandon, le paiement est annulé et la réservation n'est pas enregistrée.
 
-### 🔹 **Fin**
+🔹 Fin
 - L’état final est atteint après une validation réussie ou une annulation.
 
----
-
-## 📊 Acteurs du Diagramme
-- **Utilisateur** : Saisit les informations de paiement et valide la transaction.  
-- **Système** : Vérifie les informations de la carte, enregistre la transaction et détermine l'issue du paiement.  
-
----
-
-## 🤝 Contributeurs
-- **[Nom 1]** - Développement Backend  
-- **[Nom 2]** - Développement Frontend  
-- **[Nom 3]** - Conception des diagrammes UML  
-- **[Nom 4]** - Documentation et gestion du projet  
-
-📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.  
-
----
-
-## 📜 Licence
-Ce projet est sous licence **MIT**, ce qui signifie que vous êtes libre de l'utiliser, de le modifier et de le redistribuer sous certaines conditions :
 

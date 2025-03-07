@@ -1,50 +1,25 @@
 # 📌 Diagramme d'État - Authentification Utilisateur
 
 ## 📖 Description
-Ce diagramme d'état illustre le processus d'**authentification d'un utilisateur**. Il décrit les transitions entre les différents états en fonction de la saisie des informations de connexion.
-
-## 🖼️ Diagramme d'État
-![Diagramme d'état](./docs/diagramme_etat_authentification.png)
-
-📌 **Remarque** : Le fichier image `diagramme_etat_authentification.png` doit être placé dans le dossier `docs/` du projet.
-
----
-
-## 🏗️ Explication des États et Transitions
-
-### 🔹 **Début**
-- L'utilisateur accède à la plateforme et doit s'authentifier.
-
-### 🔹 **Utilisateur non connecté**
-- L'utilisateur doit saisir ses informations de connexion (email et mot de passe).
-
-### 🔹 **Vérification des informations**
-- 🟢 **Si les informations sont correctes** → Passage à l'état **Utilisateur connecté**.
-- 🔴 **Si les informations sont incorrectes** → Retour à l'état **Utilisateur non connecté** avec la possibilité de réessayer.
-
-### 🔹 **Utilisateur connecté**
-- L'utilisateur est désormais authentifié et peut accéder aux fonctionnalités sécurisées de la plateforme.
-
-### 🔹 **Fin**
-- L'utilisateur est connecté, la session est active.
-
----
+Ce diagramme d'état illustre le processus d'authentification d'un utilisateur. Il décrit les transitions entre les différents états en fonction de la saisie des informations de connexion.
 
 ## 📊 Acteurs du Diagramme
-- **Utilisateur** : Saisit ses identifiants pour tenter de se connecter.  
-- **Système** : Vérifie les informations et autorise ou refuse l'accès.  
+- Utilisateur : Saisit ses identifiants pour tenter de se connecter.  
+- Système : Vérifie les informations et autorise ou refuse l'accès.  
 
----
 
-## 🤝 Contributeurs
-- **[Nom 1]** - Développement Backend  
-- **[Nom 2]** - Développement Frontend  
-- **[Nom 3]** - Conception des diagrammes UML  
-- **[Nom 4]** - Documentation et gestion du projet  
+🔹 Début
+- L'utilisateur accède à la plateforme et doit s'authentifier.
 
-📌 **Remarque** : Ajouter les vrais noms des contributeurs dans la section ci-dessus.  
+🔹 Utilisateur non connecté
+- L'utilisateur doit saisir ses informations de connexion (email et mot de passe).
 
----
+🔹 Vérification des informations
+- 🟢 Si les informations sont correctes → Passage à l'état Utilisateur connecté.
+- 🔴 Si les informations sont incorrectes → Retour à l'état Utilisateur non connecté avec la possibilité de réessayer.
 
-## 📜 Licence
-Ce projet est sous licence **MIT**, ce qui signifie que vous êtes libre de l'utiliser, de le modifier et de le redistribuer sous certaines conditio
+🔹Utilisateur connecté
+- L'utilisateur est désormais authentifié et peut accéder aux fonctionnalités sécurisées de la plateforme.
+
+🔹 Fin
+- L'utilisateur est connecté, la session est active.
