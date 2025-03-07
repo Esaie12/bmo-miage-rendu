@@ -1,8 +1,9 @@
 # 📌 Diagramme de Classe - Système de Réservation
 
-## 🏗️ Explication des Classes
+Dans notre diagramme nous avons les classe suivantes. Chaque diagramme a des attributs et des méthodes. Entre les classes on peut avoir 
+une ou plusieurs relations entre elles.
 
-### 1️⃣ **Users (Utilisateurs)**
+1️⃣ Users
 - Attributs :
   - `id` : Identifiant unique
   - `name` : Nom de l'utilisateur
@@ -14,112 +15,114 @@
   - `reserverMateriel()`
   - `effectuerPaiement()`
   - `laisserAvis()`
-- **Relations** :
-  - Un utilisateur peut envoyer plusieurs **messages**.
-  - Un utilisateur peut effectuer plusieurs **réservations**.
+- Relations :
+  - Un utilisateur peut envoyer plusieurs messages.
+  - Un utilisateur peut effectuer plusieurs réservations.
 
 ---
 
-### 2️⃣ **Messages**
+2️⃣ Messages
 - Attributs :
   - `id` : Identifiant unique
   - `contenu` : Contenu du message
   - `dateSend` : Date d’envoi
-- **Relations** :
+
+- Relations :
   - Un utilisateur peut envoyer plusieurs messages.
 
 ---
 
-### 3️⃣ **Reservations**
+3️⃣ Reservations
 - Attributs :
   - `id` : Identifiant unique
   - `dateDebut` : Date de début de réservation
-  - `dateFin` : Date de fin de réservation
+  - dateDeFin : Date de fin de réservation
 - Méthodes :
   - `modifierReservation()`
   - `annulerReservation()`
-- **Relations** :
-  - Une réservation peut concerner **une ou plusieurs chambres**.
-  - Une réservation peut inclure **plusieurs prestations et matériels**.
-  - Une réservation est liée à **un paiement**.
+- Relations:
+  - Une réservation peut concerner une ou plusieurs chambres.
+  - Une réservation peut inclure plusieurs prestations et matériels.
+  - Une réservation est liée à un paiement.
 
 ---
 
-### 4️⃣ **Prestations & Matériels**
+### 4️⃣ Prestations & Matériels
 - Attributs :
   - `id` : Identifiant unique
   - `title` : Nom de la prestation/matériel
   - `tarif` : Tarif associé
-- **Relations** :
-  - Une prestation et un matériel peuvent être liés à plusieurs **réservations**.
+
+- Relations:
+  - Une prestation et un matériel peuvent être liés à plusieurs réservations.
 
 ---
 
-### 5️⃣ **Chambres**
+5️⃣Chambres
 - Attributs :
   - `id` : Identifiant unique
   - `title` : Nom de la chambre
-- **Relations** :
-  - Une résidence possède plusieurs **chambres**.
-  - Chaque chambre a des **disponibilités**.
+- Relations :
+  - Une résidence possède plusieurs chambres.
+  - Chaque chambre a des disponibilités.
 
 ---
 
-### 6️⃣ **Disponibilités**
+6️⃣ Disponibilités
 - Attributs :
   - `id` : Identifiant unique
   - `dateDebut` : Début de la période de disponibilité
   - `dateFin` : Fin de la période de disponibilité
-- **Relations** :
-  - Une chambre a **une ou plusieurs disponibilités**.
+- Relations:
+  - Une chambre a une ou plusieurs disponibilités.
 
 ---
 
-### 7️⃣ **Gestionnaire**
+7️⃣ Gestionnaire
 - Attributs :
   - `id` : Identifiant unique
   - `name` : Nom du gestionnaire
   - `email` : Adresse e-mail
   - `password` : Mot de passe
-- **Relations** :
-  - Un gestionnaire gère **une ou plusieurs résidences**.
+- Relations :
+  - Un gestionnaire gère une ou plusieurs résidences.
 
 ---
 
-### 8️⃣ **Résidence**
+8️⃣ Résidence
 - Attributs :
   - `id` : Identifiant unique
   - `title` : Nom de la résidence
-- **Relations** :
-  - Une résidence est gérée par **un gestionnaire**.
-  - Une résidence contient **plusieurs chambres**.
+- Relations:
+  - Une résidence est gérée par un gestionnaire.
+  - Une résidence contient plusieurs chambres.
 
 ---
 
-### 9️⃣ **Paiements**
+9️⃣ Paiements
 - Attributs :
   - `id` : Identifiant unique
   - `idTransaction` : Numéro de transaction
   - `montant` : Montant payé
   - `modeDePaiement` : Moyen de paiement utilisé
-- **Relations** :
-  - Une réservation est associée à **un paiement**.
+- Relations :
+  - Une réservation est associée à un paiement.
 
 ---
 
-### 🔟 **Avis**
+🔟 Avis
 - Attributs :
   - `id` : Identifiant unique
   - `contenu` : Contenu de l’avis
-- **Relations** :
-  - Un utilisateur peut laisser **plusieurs avis** sur les chambres et services.
+- Relations :
+  - Un utilisateur peut laisser plusieurs avis sur les chambres et services.
 
 ---
 
-## 📊 Relations Clés
-- **Un utilisateur** peut effectuer **plusieurs réservations**.
-- **Une réservation** peut concerner **plusieurs chambres, prestations et matériels**.
-- **Chaque chambre** appartient à **une résidence** et a des **disponibilités**.
-- **Un paiement** est associé à **une réservation**.
-- **Un utilisateur** peut **laisser des avis** et **envoyer des messages**.
+📊 Relations Clés
+- Un utilisateur peut effectuer plusieurs réservations.
+- Une réservation peut concerner plusieurs chambres, prestations et matériels.
+- Chaque chambre appartient à une résidence et a des disponibilités.
+- Un paiement est associé à une réservation.
+- Un utilisateur peut laisser des avis et envoyer des messages.
 

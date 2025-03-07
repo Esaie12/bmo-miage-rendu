@@ -1,62 +1,49 @@
 # 📌 Diagramme de Séquence - Réservation de Chambre
 
+## 📊 Acteurs du Diagramme
+- Utilisateur : Recherche une chambre et effectue une réservation.
+- Système : Traite la réservation, gère la disponibilité des chambres et le paiement.
+
+
 ## 📖 Description
-Ce diagramme de séquence illustre le processus de **réservation d'une chambre** par un **Utilisateur** via le **Système**. Il prend en compte deux scénarios :
-1. **Si la chambre est disponible** : Le paiement est effectué et la réservation est confirmée.
-2. **Si la chambre est indisponible** : L'utilisateur est notifié et une nouvelle liste des chambres disponibles lui est proposée.
+Ce diagramme de séquence illustre le processus de réservation d'une chambre par un Utilisateur via le Système. Il prend en compte deux scénarios :
+1. Si la chambre est disponible : Le paiement est effectué et la réservation est confirmée.
+2. Si la chambre est indisponible : L'utilisateur est notifié et une nouvelle liste des chambres disponibles lui est proposée.
 
-## 🖼️ Diagramme de Séquence
-![Diagramme de séquence](./docs/diagramme_reservation_chambre.png)
-
-📌 **Remarque** : Le fichier image `diagramme_reservation_chambre.png` doit être placé dans le dossier `docs/` du projet.
-
----
 
 ## 🏗️ Explication des Étapes
 
-### 🔍 **Recherche et Demande de Réservation**
-1️⃣ **L'Utilisateur recherche des chambres**  
-   - Il envoie une requête au **Système** pour afficher la liste des chambres disponibles.
+### 🔍 Recherche et Demande de Réservation
+1️⃣ L'Utilisateur recherche des chambres  
+   - Il envoie une requête au Système pour afficher la liste des chambres disponibles.
 
-2️⃣ **Le Système renvoie la liste des chambres et leurs disponibilités**  
+2️⃣ Le Système renvoie la liste des chambres et leurs disponibilités  
    - Toutes les chambres disponibles sont affichées à l’utilisateur.
 
-3️⃣ **L'Utilisateur sélectionne une chambre et envoie une demande de réservation**  
+3️⃣ L'Utilisateur sélectionne une chambre et envoie une demande de réservation  
    - Il choisit une chambre et confirme sa réservation.
 
----
 
-### 🛏️ **Alternative : Gestion de la Disponibilité de la Chambre**
 
-#### ✅ **Si la chambre est disponible**  
-4️⃣ **Le Système affiche la page de paiement**  
+### 🛏️ Alternative : Gestion de la Disponibilité de la Chambre
+
+✅ Si la chambre est disponible  
+4️⃣ Le Système affiche la page de paiement  
    - L'utilisateur est dirigé vers une page pour effectuer son paiement.
 
-5️⃣ **L'Utilisateur effectue un paiement valide**  
+5️⃣ L'Utilisateur effectue un paiement valide  
    - Le paiement est traité avec succès.
 
-6️⃣ **Le Système enregistre la réservation**  
+6️⃣ Le Système enregistre la réservation  
    - La chambre est réservée et attribuée à l’utilisateur.
 
-7️⃣ **Le Système envoie un email de confirmation de réservation**  
+7️⃣ Le Système envoie un email de confirmation de réservation  
    - Un message de confirmation est envoyé à l’utilisateur.
 
-#### ❌ **Si la chambre est indisponible**  
-4️⃣ **Le Système informe l’Utilisateur que la chambre n'est plus disponible**  
+❌ Si la chambre est indisponible  
+4️⃣ Le Système informe l’Utilisateur que la chambre n'est plus disponible  
    - Une notification lui est envoyée.
 
-5️⃣ **Le Système renvoie une nouvelle liste des chambres disponibles**  
+5️⃣ Le Système renvoie une nouvelle liste des chambres disponibles  
    - L'utilisateur peut choisir une autre chambre.
 
----
-
-## 📊 Acteurs du Diagramme
-- **Utilisateur** : Recherche une chambre et effectue une réservation.
-- **Système** : Traite la réservation, gère la disponibilité des chambres et le paiement.
-
----
-
-## 🤝 Contributeurs
-- **[Nom 1]** - Développement Backend  
-- **[Nom 2]** - Développement Frontend  
-- **[Nom 3]** -
