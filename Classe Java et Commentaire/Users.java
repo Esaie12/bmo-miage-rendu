@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import com.modeliosoft.modelio.javadesigner.annotations.objid;
 
 @objid ("c708bd7a-04d0-4de0-a9bf-0781ce24753a")
@@ -13,6 +15,12 @@ public class Users {
 
     @objid ("987e3bbf-8eea-4246-a815-207dd218f4fd")
     public String password;
+
+    @objid ("8d143c7c-b772-405a-97b0-be13781f1c32")
+    public List<Messages>  = new ArrayList<Messages> ();
+
+    @objid ("79b169ef-c59b-4502-a497-101c06063b47")
+    public List<Reservations> reservations = new ArrayList<Reservations> ();
 
     @objid ("06d4707d-086e-40d9-8095-9bfb05fbabdd")
     public void seConnecter() {

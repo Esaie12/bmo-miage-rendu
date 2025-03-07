@@ -12,4 +12,7 @@ public class Disponibilités {
     @objid ("dd208152-5a61-4314-bb6e-88fa48d5666d")
     public Date dateFin;
 
+    @objid ("861ddabb-f2a5-4532-b007-65a1c815c332")
+    public Chambres ;
+
 }
