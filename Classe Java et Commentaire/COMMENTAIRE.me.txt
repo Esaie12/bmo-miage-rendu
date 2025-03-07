@@ -1,0 +1,1 @@
+Apres avoir exporter les codes des différentes classes de notre système, nous avons remarqué que ils sont semblables à la manière d'écrire lors du TD4. Il y a bien les attributs avec leur type, ainsi que les relations entre les différentes classes.
