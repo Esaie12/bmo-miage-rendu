@@ -9,7 +9,7 @@ TP BMO - L3 MIAGE (2024 -2025)
 
 ## 📖 Description
 
-Ce projet est une modélisation d'un système d gestion de location de résidence à courte durée. Il comprend quatre menus principaux : 
+Ce projet est une modélisation d'un système de gestion de location de résidence à courte durée. Il comprend quatre menus principaux : 
 - Diagramme de cas d'utilisation
 - Diagramme de classe
 - Diagrammes d'objet
