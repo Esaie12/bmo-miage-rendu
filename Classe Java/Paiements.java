@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import com.modeliosoft.modelio.javadesigner.annotations.objid;
 
 @objid ("740175ff-9759-456f-b5e6-df8920034396")
@@ -13,5 +15,8 @@ public class Paiements {
 
     @objid ("d67808f8-572f-4888-8a4f-0222a1470cba")
     public String modeDePaiement;
+
+    @objid ("ec501ad1-cd65-472b-a18f-b0941b1c683b")
+    public List<Reservations>  = new ArrayList<Reservations> ();
 
 }

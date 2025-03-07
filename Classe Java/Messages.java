@@ -12,4 +12,10 @@ public class Messages {
     @objid ("d7e581bb-74cc-4688-bd94-76a9957debc1")
     public Date dateSend;
 
+    @objid ("b853d740-3e02-4f2b-9fd2-9c1ab538bc28")
+    public Users users;
+
+    @objid ("f98701ad-e1a6-423c-ae44-adef3072562a")
+    public Gestionnaire ;
+
 }

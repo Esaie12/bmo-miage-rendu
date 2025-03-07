@@ -19,4 +19,7 @@ public class Gestionnaire {
     @objid ("f78289af-2afa-4ae1-be59-961398066298")
     public List<Residence> residence = new ArrayList<Residence> ();
 
+    @objid ("4bfa271d-d4b1-4ad5-b5db-6a65a61ca5dd")
+    public List<Messages> messages = new ArrayList<Messages> ();
+
 }
